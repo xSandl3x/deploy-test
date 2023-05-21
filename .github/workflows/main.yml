@@ -4,7 +4,7 @@ on:
   workflow_dispatch
 
 env:
-  SERVER_HOST: 51.83.171.211
+  SERVER_HOST: mebeleiya.space
   SERVER_USER: root
   SERVER_PATH: /home/mebeleiya/www
 

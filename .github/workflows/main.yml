@@ -22,6 +22,10 @@ jobs:
         with:
           key: "${{ secrets.MY_KEY }}"
           known_hosts: "just-a-placeholder-so-we-dont-get-errors"
+          task-definition: ${{ steps.cgafrica-new-backend-task.outputs.task-definition }}
+          service: cgafrica-backend-service
+          cluster: cgafrica-backend-cluster
+          wait-for-service-stability: true
           
       - name: Generate auth hosts
         run: ssh-keyscan -H ${{ env.SERVER_HOST }} >> ~/.ssh/known_hosts

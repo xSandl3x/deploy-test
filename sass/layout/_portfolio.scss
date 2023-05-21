@@ -1,0 +1,129 @@
+.projects .title {
+  color: var(--text--color);
+}
+.portfolio-buttons {
+  display: flex;
+  flex-wrap: wrap;
+
+  @media screen and (max-width: 1199px) {
+    margin-top: 60px;
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    justify-content: center;
+
+    margin-bottom: 65px;
+  }
+}
+
+.projects-cards-title p {
+  color: var(--primary--text--color);
+}
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-bottom: -30px;
+  }
+}
+.projects-cards {
+  @media screen and (max-width: 767px) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 2 * 30px) / 2);
+    margin: 15px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc(100% / 3 - 30px);
+    margin-right: 0;
+    margin-top: 0;
+    margin-left: 30px;
+    margin-bottom: 30px;
+  }
+
+  &:focus,
+  &:hover {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+
+    transition: box-shadow 250ms var(--time--animation);
+  }
+  border: 1px solid #eeeeee;
+}
+
+.projects-card-wrap {
+  position: relative;
+  overflow: hidden;
+}
+.projects-card-text {
+  height: 100%;
+  position: absolute;
+  font-size: 18px;
+  line-height: 1.55;
+  letter-spacing: 0.03em;
+
+  @media screen and (max-width: 479px) {
+    padding: auto;
+  }
+
+  @media screen and (min-width: 480px) {
+    padding: 70px 24px;
+  }
+
+  top: 0;
+  left: 0;
+  transform: translateY(110%);
+  transition: transform 250ms var(--time--animation);
+
+  color: var(--text--color--white);
+  background: rgba(33, 150, 243, 0.9);
+
+  .projects-focus:hover &,
+  .projects-focus:focus & {
+    transform: translateY(0);
+  }
+}
+.projects-focus {
+  display: block;
+}
+
+.projects-cards-title {
+  padding: 20px 24px;
+  padding-right: 0;
+}
+.projects-cards-title .title {
+  margin-bottom: 4px;
+}
+.projects .title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+.description {
+  font-size: 16px;
+  line-height: 1.88;
+}
+.button-menu:not(:last-child) {
+  margin-right: 8px;
+}

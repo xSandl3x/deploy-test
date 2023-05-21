@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mebeleiya | Головна</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
+
+  </head>
+  <body class="openmodal" data-body>
+<!-- <li><a href="02-lightbox.html">SimpleLightbox library</a></li> -->
+    <header class="header">
+      <div class="conteiner header-conteiner">
+        <nav class="nav">
+          <a href="" class="logo link"> <span>MeBeLe</span>iya</a>
+          <ul class="nav__list list">
+            <li class="nav__item">
+              <a href="" class="link current nav__link">Головна</a>
+            </li>
+            <li class="nav__item">
+              <a href="./02-lightbox.html" class="link nav__link">Портфоліо</a>
+            </li>
+                        <!-- <select class="change-lang">
+                      
+                          <option value="ua" selected>UA</option>
+                          <option value="ru">RU</option>
+                        </select> -->
+            <!-- <li class="nav__item">
+              <a href="./contacts.html" class="link nav__link">Контакты</a>
+            </li> -->
+          </ul>
+        </nav>
+        <!-- Старт мобильного меню -->
+        <button class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+          aria-label="menu">
+          <svg class="burger-icon" >
+            <use href="./images/symbol-defs.svg#icon-burger-menu"></use>
+          </svg>
+        </button>
+<!-- мобильное меню -->
+        <div class="menu-container js-menu-container" id="mobile-menu"> 
+          <button class="menu-toggle js-close-menu" aria-label="menu">
+            <svg class="close-btn-icon">
+              <use href="./images/symbol-defs.svg#icon-close"></use>
+            </svg>
+          </button>
+          <ul class="mobile-menu">
+            <li class="nav__item">
+              <a href="" class="link current mobile-menu-item">Головна</a>
+            </li>
+            <li class="nav__item">
+              <a href="./02-lightbox.html" class="link mobile-menu-item">Портфоліо</a>
+            </li>
+            <!-- <li class="nav__item">
+              <a href="./contacts.html" class="link mobile-menu-item">Контакти</a>
+            </li> -->
+          </ul>
+          <div>
+            <ul class="link list">
+
+                <li class="nav__item">
+                  <a href="tel:+380956242892" class="link mobile-menu-tel">
+                    +38 095 6242892</a>
+                </li>
+                <li class="nav__item">
+                  <a href="tel:+380956242892" class="link mobile-menu-tel">
+                    +38 097 6075054</a>
+                </li>
+              <li class="nav__item">
+                <a href="mailto:info@devstudio.com" class="link mobile-menu-mail">
+                  mebeleiya@ukr.net</a>
+              </li>
+              </ul>
+
+            </div>
+        </div>
+
+            <!--Конец мобильного меню  -->
+        <ul class="contact  list">
+            <li class="contact-tablet">
+                <a href="mailto:info@devstudio.com" class="link contact__link">
+                    <svg width="16" height="12" class="contact__icon contact__icon--mail">
+                        <use href="./images/symbol-defs.svg#icon-envelope">
+                        </use>
+                    </svg>mebeleiya@ukr.net</a>
+            </li>
+            <li class="contact-tablet">
+                                <a href="tel:+380956242892" class="link contact-tablet contact__link">
+                    <svg width="10" height="16" class="contact__icon contact__icon--tel">
+                        <use href="./images/symbol-defs.svg#icon-smartphone">
+                        </use>
+                    </svg>+38 095 624 28 92</a>
+            </li>
+            <li class="contact-tablet">
+              <a href="tel:+380956242892" class="link contact-tablet contact__link">
+                <svg width="10" height="16" class="contact__icon contact__icon--tel">
+                  <use href="./images/symbol-defs.svg#icon-smartphone">
+                  </use>
+                </svg>+38 097 607 50 54</a>
+            </li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <!--Секция Hero-->
+      <section class="hero">
+       
+        <div class="conteiner hero-conteiner">
+          <h1 class="hero-title">Найкращі кухні у нас</h1>
+          <button style="color:#000" class="button" data-modal-open>Заказати прорахунок</button>
+        </div>
+      </section>
+      <section style="padding-left:15px ; padding-right: 15px; padding-top: 10px; " class="section">
+            <p style="color: #000; font-size: 16px; max-width: 1200px; margin-left: auto; margin-right: auto;">
+                &nbsp&nbspНаша компанія спеціалізується на виробництві високоякісних меблів за індивідуальними проектами.
+                Також маємо можливість виробляти окремі елементи або повністю конструкції з металу та фарбувати у більш ніж 20 кольорів.
+                Наші вироби вигідно відрізняються від ринкових цін,проте ми враховуємо всі побажання замовника і можемо скомплектувати виріб так,щоб практично поєднати матеріали в певних цінових групах 
+                ,щоб досягти бажаного результату по конфігурації,кольору та ціні.
+                Ми можемо прорахувати Ваш ескіз або зробити разом новий. Все що від Вас потрібно - просто прорахуйте разом з нами і порівняйте ціну.
+            </p>
+        </section>
+
+  
+      <!-- Slider main container -->
+      <section style=" text-align: center; max-width: 1600px; margin-left: auto; margin-right: auto;" class="section slader">
+      <div  class="swiper">
+        <!-- Additional required wrapper -->
+        <div style="padding-left: 5%;" class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide"><img src="./foto/foto15.webp" alt="Кухня"></div>
+          <div class="swiper-slide"><img src="./foto/foto2.webp" alt="Кухня"></div>
+          <div class="swiper-slide"><img src="./foto/foto3.webp" alt="Кухня"></div>
+          <div class="swiper-slide"><img src="./foto/foto4.webp" alt="Кухня"></div>
+          <div class="swiper-slide"><img src="./foto/foto5.webp" alt="Кухня"></div>
+          <div class="swiper-slide"><img src="./foto/foto6.webp" alt="Кухня"></div>
+          <div class="swiper-slide"><img src="./foto/foto7.webp" alt="Кухня"></div>
+          <div class="swiper-slide"><img src="./foto/foto8.webp" alt="Кухня"></div>
+          <div class="swiper-slide"><img src="./foto/foto9.webp" alt="Кухня"></div>
+          <div class="swiper-slide"><img src="./foto/foto10.webp" alt="Кухня"></div>
+          <div class="swiper-slide"><img src="./foto/foto11.webp" alt="Кухня"></div>
+          <div class="swiper-slide"><img src="./foto/foto12.webp" alt="Кухня"></div>
+          <div class="swiper-slide"><img src="./foto/foto12.webp" alt="Кухня"></div>
+          <div class="swiper-slide"><img src="./foto/foto14.webp" alt="Кухня"></div>
+          <div class="swiper-slide"><img src="./foto/foto1.webp" alt="Кухня"></div>
+                    <!-- <div class="swiper-slide"><img src="./foto/foto16.webp" alt="Кухня"></div> -->
+                    <!-- <div class="swiper-slide"><img src="./foto/foto17.webp" alt="Кухня"></div> -->
+                    <!-- <div class="swiper-slide"><img src="./foto/foto18.webp" alt="Кухня"></div> -->
+                    <!-- <div class="swiper-slide"><img src="./foto/foto19.webp" alt="Кухня"></div> -->
+                    <!-- <div class="swiper-slide"><img src="./foto/foto20.webp" alt="Кухня"></div> -->
+                    <!-- <div class="swiper-slide"><img src="./foto/foto21.webp" alt="Кухня"></div> -->
+                    <!-- <div class="swiper-slide"><img src="./foto/foto22.webp" alt="Кухня"></div> -->
+                    <!-- <div class="swiper-slide"><img src="./foto/foto23.webp" alt="Кухня"></div>
+                    <div class="swiper-slide"><img src="./foto/foto24.webp" alt="Кухня"></div>
+                    <div class="swiper-slide"><img src="./foto/foto25.webp" alt="Кухня"></div> -->
+                    <!-- <div class="swiper-slide"><img src="./foto/foto26.webp" alt="Кухня"></div> -->
+                    <div class="swiper-slide"><img src="./foto/foto27.webp" alt="Кухня"></div>
+                    <!-- <div class="swiper-slide"><img src="./foto/foto28.webp" alt="Кухня"></div> -->
+                    <!-- <div class="swiper-slide"><img src="./foto/foto29.webp" alt="Кухня"></div>
+                    <div class="swiper-slide"><img src="./foto/foto30.webp" alt="Кухня"></div> -->
+                                        <!-- <div class="swiper-slide"><img src="./foto/foto31.webp" alt="Кухня"></div> -->
+                                        <!-- <div class="swiper-slide"><img src="./foto/foto32.webp" alt="Кухня"></div> -->
+                                        <!-- <div class="swiper-slide"><img src="./foto/foto33.webp" alt="Кухня"></div> -->
+                                        <!-- <div class="swiper-slide"><img src="./foto/foto34.webp" alt="Кухня"></div> -->
+                                        <!-- <div class="swiper-slide"><img src="./foto/foto35.webp" alt="Кухня"></div> -->
+                                        <!-- <div class="swiper-slide"><img src="./foto/foto36.webp" alt="Кухня"></div> -->
+                                        <!-- <div class="swiper-slide"><img src="./foto/foto37.webp" alt="Кухня"></div> -->
+                                        <!-- <div class="swiper-slide"><img src="./foto/foto38.webp" alt="Кухня"></div> -->
+                                        <!-- <div class="swiper-slide"><img src="./foto/foto39.webp" alt="Кухня"></div> -->
+                                        <!-- <div class="swiper-slide"><img src="./foto/foto40.webp" alt="Кухня"></div> -->
+                                        <!-- <div class="swiper-slide"><img src="./foto/foto41.webp" alt="Кухня"></div> -->
+                                        <div class="swiper-slide"><img src="./foto/foto42.webp" alt="Кухня"></div>
+                                        <div class="swiper-slide"><img src="./foto/foto43.webp" alt="Кухня"></div>
+                                        <!-- <div class="swiper-slide"><img src="./foto/foto44.webp" alt="Кухня"></div> -->
+                                        <!-- <div class="swiper-slide"><img src="./foto/foto45.webp" alt="Кухня"></div> -->
+                                            <div class="swiper-slide"><img src="./foto/foto46.webp" alt="Кухня"></div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+      
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      
+        <!-- If we need scrollbar -->
+        <!-- <div class="swiper-scrollbar"></div>
+      </div> -->
+      </section>
+      <!--Секция наши преимущества-->
+      <section class="section">
+        
+        <div class="conteiner our-benefits">
+          <h2 hidden class="section-title">Наші переваги</h2>
+          <ul class="benefits list">
+            <li class="benefits-item">
+              <h3 class="benefits-title title">Увага до деталей</h3>
+              <p class="text">
+              Ідейні міркування, а також початок повсякденної роботи з
+              формування позиції.
+              </p>
+            </li>
+            <li class="benefits-item">
+              <h3 class="benefits-title title">Пунктуальність</h3>
+              <p class="text">
+               Завжди вчасно завжди в обумовлені терміни
+              </p>
+            </li>
+            <li class="benefits-item">
+              <h3 class="benefits-title title">Планування</h3>
+              <p class="text">
+                Консультації по широкому колу проблем та їх вирішення
+              </p>
+            </li>
+            <li class="benefits-item">
+              <h3 class="benefits-title title">Надсучасні технології</h3>
+              <p class="text">
+                Крокуємо в ногу з часом і пропонуємо найкращі рішення
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!--Секция чем занимаемся-->
+      <section class="section our-directions">
+        
+        <div class="conteiner">
+          <h2 class="section-title">Чим ми займаємось</h2>
+          <ul class="directions list">
+            <li class="directions-item">
+              <div class="directions-box">
+              <picture>   
+               <source media="(min-width: 1200px)" 
+                       srcset="./img/occupation/occ-1-desktop.webp 1x, 
+                        ./img/occupation/occ-1-desktop@2x.webp 2x" 
+                      type="image/webp"> 
+                <source media="(min-width: 1200px)" 
+                         srcset="./img/occupation/occ-1-desktop.webp 1x, 
+                        ./img/occupation/occ-1-desktop@2x.webp 2x" >
+                <img 
+                src="./img/occupation/occ-1-desktop.jpg" 
+                alt="Дизайнер"
+                loading="lazy">
+              </picture>
+              <p class="directions-title">Кухні</p>
+            </div>
+            </li>
+            <li class="directions-item">
+              <div class="directions-box">
+              <picture>   
+               <source media="(min-width: 1200px)" 
+                       srcset="./img/occupation/occ-2-desktop.webp 1x, 
+                        ./img/occupation/occ-2-desktop@2x.webp 2x" 
+                      type="image/webp"> 
+                <source media="(min-width: 1200px)" 
+                         srcset="./img/occupation/occ-2-desktop.webp 1x, 
+                        ./img/occupation/occ-2-desktop@2x.webp 2x" >
+                <img 
+                src="./img/occupation/occ-2-desktop.jpg" 
+                alt="Дизайнер"
+                loading="lazy">
+              </picture>
+                            </picture>
+                            <p class="directions-title">Лофт меблі</p>
+                            </div>
+                            </li>
+                            <li class="directions-item">
+                              <div class="directions-box">
+                                <picture>
+                                  <source media="(min-width: 1200px)" srcset="./img/occupation/occ-2-desktop.webp 1x, 
+                                                    ./img/occupation/occ-2-desktop@2x.webp 2x" type="image/webp">
+                                  <source media="(min-width: 1200px)" srcset="./img/occupation/occ-2-desktop.webp 1x, 
+                                                    ./img/occupation/occ-2-desktop@2x.webp 2x">
+                                  <img src="./img/occupation/occ-2-desktop.jpg" alt="Дизайнер" loading="lazy">
+                                </picture>
+              <p class="directions-title">Шафи купе</p>
+
+              </div>
+              </li>
+            <li class="directions-item">
+              <div class="directions-box">
+              <picture>   
+               <source media="(min-width: 1200px)" 
+                       srcset="./img/occupation/occ-3-desktop.webp 1x, 
+                        ./img/occupation/occ-3-desktop@2x.webp 2x" 
+                      type="image/webp"> 
+                <source media="(min-width: 1200px)" 
+                         srcset="./img/occupation/occ-3-desktop.webp 1x, 
+                        ./img/occupation/occ-3-desktop@2x.webp 2x" >
+                <img 
+                src="./img/occupation/occ-3-desktop.jpg" 
+                alt="Дизайнер"
+                loading="lazy">
+              </picture>
+              <p class="directions-title">Вироби з металу</p>
+
+              </div>
+              </li>
+          </ul>
+        </div>
+      </section>
+
+
+      <ul class="gallery"></ul>
+    </main>
+    <!--Футер-->
+    <footer class="footer">
+      <div class="conteiner footer-sections">
+        <div class="join-left">
+        <a href="" class="logo footer-logo link"><span>Mebele</span>iya</a>
+        <address>
+          <ul class="footer-contacts list">
+            <li class="">
+              <a class="address">м. Київ вул. Григоренко, 39б</a>
+            </li>
+            <li class="footer-contacts-link">
+              <a href="mailto:info@example.com" class=" footer-contacts-link link"
+                >mebeleiya@ukr.net</a
+              >
+            </li>
+            <li class="">
+              <a href="tel:+380956242892" class=" footer-contacts-link link">+38 095 624 28 92</a>
+            </li>
+            <li class="">
+              <a href="tel:+38056242892" class="footer-contacts-link link">+38 097 607 50 54</a>
+            </li>
+          </ul>
+        </address>
+      </div>
+
+      </div>
+    </footer>
+    <!--Модальное окно-->
+    <div class="backdrop is-hidden" data-modal>
+
+
+      <div class="modal" >
+
+
+
+ <!-- <form action="https://formspree.io/f/mnqyrzjo" method="POST">
+<label>
+  Your name:
+    <input type="name" name="name">
+</label>
+<label>
+      Your tel:
+    <input type="tel" name="tel">
+</label>
+      Your email:
+    <input type="email" name="email">
+  </label>
+  <label>
+    Your message:
+    <textarea name="message"></textarea>
+  </label>
+ // your other form fields go here
+  <button type="submit">Send</button>
+</form> -->
+
+
+
+<!-- <form action="https://formsubmit.co/kuchmastanislav@bigmir.net" method="POST">
+  <input type="text" name="name" required>
+  <input type="email" name="email" required>
+  <button type="submit">Send</button>
+</form> -->
+
+
+
+        
+        <form  action="https://formspree.io/f/mbjebenn"  method="POST" >
+          <div class="form-field">
+            <b class="form-title">Залиште Ваші дані ми перетелефонуємо</b>
+
+          <label class="form-label" >Імя
+            <input class="form-input name" type="text" name="name">
+
+             
+          </label>
+          <label class="form-label" >Телефон
+              <input class="form-input tel" type="tel" name="tel">
+
+          </label>
+          <label class="form-label" >Пошта
+              <input class="form-input email" type="email" name="mail">
+ 
+          </label>
+          
+          <label class="form-label" for="comment">Ваші побажання</label>
+          <textarea class="form-comment" name="comment" id="comment" rows="10" placeholder="Введіть текст"></textarea>
+          </div>
+      
+              
+           <button style="color: #000;" type="submit" class="button form-button">Відправити</button>
+        </form> 
+      <button class="modal-button" data-modal-close>
+        <svg class="modal-close-icon">
+          <use href="./images/symbol-defs.svg#icon-close"></use>
+        </svg>
+      </button>
+    </div>
+    </div>
+    <script src="./js/modal.js">
+     
+    </script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"></script>
+    <script defer src="js/mobile-menu.js"></script>
+    <script defer src="js/form-submit.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="./js/swiper.js"></script>
+    <script src="
+    https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js
+    "></script>
+
+    
+  </body>
+</html>

@@ -1,0 +1,26 @@
+/*Button*/
+.button {
+  color: var(--text--color);
+  background-color: var(--accent--color);
+  font-family: inherit;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  border: none;
+  cursor: pointer;
+
+  width: 200px;
+  min-height: 50px;
+  border-radius: 4px;
+  padding: 10px 30px;
+
+  transition: background-color 250ms var(--time--animation),
+    color 250ms var(--time--animation);
+
+  &:hover,
+  &:focus {
+    background-color: var(--botton--color--hover);
+    color: var(--text--color--white);
+  }
+}

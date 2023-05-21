@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+        integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="./css/main.min.css" />
+</head>
+
+<body>
+    <header class="header">
+        <div class="conteiner header-conteiner">
+            <nav class="nav">
+                <a href="" class="logo link"> <span>Mebele</span>iya</a>
+                <ul class="nav__list list">
+                    <li class="nav__item">
+                        <a href="./index.html" class="link nav__link">Головна</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="./02-lightbox.html" class="link current nav__link">Портфоліо</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="./contacts.html" class="link nav__link">Контакти</a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- Старт мобильного меню -->
+            <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+                <svg class="burger-icon">
+                    <use href="./images/symbol-defs.svg#icon-burger-menu"></use>
+                </svg>
+            </button>
+
+            <div class="menu-container js-menu-container" id="mobile-menu">
+                <button class="menu-toggle js-close-menu">
+                    <svg class="close-btn-icon">
+                        <use href="./images/symbol-defs.svg#icon-close"></use>
+                    </svg>
+                </button>
+                <ul class="mobile-menu">
+                    <li class="nav__item">
+                        <a href="./index.html" class="link mobile-menu-item">Головна</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="./02-lightbox.html" class="link current mobile-menu-item">Портфоліо</a>
+                    </li>
+                    <!-- <li class="nav__item">
+                        <a href="./contacts.html" class="link mobile-menu-item">Контакти</a>
+                    </li> -->
+                </ul>
+
+                <ul class="link list">
+
+                    <li class="nav__item">
+                        <a href="tel:+380956242892" class="link mobile-menu-tel">
+                            +38 095 624 28 92</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="mailto:info@devstudio.com" class="link mobile-menu-mail">
+                            info@devstudio.com</a>
+                    </li>
+                </ul>
+                <ul class="mobil-social-network">
+                    <li><a class="mobil-social-network-link link" href="">Instagram</a></li>
+                    <li><a class="mobil-social-network-link link" href="">Twitter</a></li>
+                    <li><a class="mobil-social-network-link link" href="">Facebook</a></li>
+                    <li><a class="mobil-social-network-link link" href="">LinkedIn</a></li>
+                </ul>
+
+            </div>
+            <!--Конец мобильного меню  -->
+            <ul class="contact list">
+                <li class="contact-tablet">
+                    <a href="mailto:info@devstudio.com" class="link contact__link">
+                        <svg width="16" height="12" class="contact__icon">
+                            <use href="./images/symbol-defs.svg#icon-envelope">
+                            </use>
+                        </svg>info@devstudio.com</a>
+                </li>
+                <li class="contact-tablet">
+                    <a href="tel:+380956242892" class="link contact__link">
+                        <svg width="10" height="16" class="contact__icon">
+                            <use href="./images/symbol-defs.svg#icon-smartphone">
+                            </use>
+                        </svg>+38 095 624 28 92</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+            <section class="hero">
+            
+                <div class="conteiner hero-conteiner-contact">
+                    <h1 class="hero-title">Наші контакти</h1>
+             
+                </div>
+            </section>
+
+
+    <footer class="footer">
+        <div class="conteiner footer-sections">
+            <div class="join-left">
+                <a href="" class="logo footer-logo link"><span>Mebel</span>iya</a>
+                <address>
+                    <ul class="footer-contacts list">
+                        <li class="footer-contacts-link">
+                            <a class="address">г. Киев, пр-т Леси Украинки, 26</a>
+                        </li>
+                        <li class="">
+                            <a href="mailto:info@example.com" class="footer-contacts-link link">info@example.com</a>
+                        </li>
+                        <li class="">
+                            <a href="tel:+38056242892" class="footer-contacts-link link">+38 095 624 28 92</a>
+                        </li>
+                    </ul>
+                </address>
+            </div>
+            <!--Секция присоединяйтесть-->
+            <div class="join-right">
+                <p class="join-title">присоединяйтесть</p>
+                <ul class="list footer-social social-list">
+                    <li class="social-item">
+                        <a href="" class="social-link">
+                            <svg class="social-icon">
+                                <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-item">
+                        <a href="" class="social-link">
+                            <svg class="social-icon">
+                                <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-item">
+                        <a href="" class="social-link">
+                            <svg class="social-icon">
+                                <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-item">
+                        <a href="" class="social-link">
+                            <svg class="social-icon">
+                                <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="join-subscribe">
+                <p class="join-title">Подпишитесь на рассылку</p>
+                <form class="form-subscribe">
+                    <!-- <p class="join-title">Подпишитесь на рассылку</p> -->
+                    <label>
+                        <input class="subscribe-input" type="email" name="subscribe-mail" placeholder="E-mail">
+                    </label>
+                    <button class="button subscribe-button" type="submit">Подписаться</button>
+
+                </form>
+            </div>
+        </div>
+    </footer>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous"></script>
+    <script defer src="js/mobile-menu.js"></script>
+
+</body>
+
+</html>

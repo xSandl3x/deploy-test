@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="conteiner header-conteiner">
+        <nav class="nav">
+          <a href="" class="logo link"> <span>Mebel</span>iya</a>
+          <ul class="nav__list list">
+            <li class="nav__item">
+              <a href="./index.html" class="link nav__link">Студия</a>
+            </li>
+            <li class="nav__item">
+              <a href="" class="link current nav__link">Портфолио</a>
+            </li>
+            <li class="nav__item">
+              <a href="" class="link nav__link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+                <!-- Старт мобильного меню -->
+                <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+                  <svg class="burger-icon">
+                    <use href="./images/symbol-defs.svg#icon-burger-menu"></use>
+                  </svg>
+                </button>
+                
+                <div class="menu-container js-menu-container" id="mobile-menu">
+                  <button class="menu-toggle js-close-menu">
+                    <svg class="close-btn-icon">
+                      <use href="./images/symbol-defs.svg#icon-close"></use>
+                    </svg>
+                  </button>
+                  <ul class="mobile-menu">
+                    <li class="nav__item">
+                      <a href="./index.html" class="link mobile-menu-item">Студия</a>
+                    </li>
+                    <li class="nav__item">
+                      <a href="" class="link current mobile-menu-item">Портфолио</a>
+                    </li>
+                    <li class="nav__item">
+                      <a href="" class="link mobile-menu-item">Контакты</a>
+                    </li>
+                  </ul>
+                
+                  <ul class="link list">
+                
+                    <li class="nav__item">
+                      <a href="tel:+380956242892" class="link mobile-menu-tel">
+                        +38 095 624 28 92</a>
+                    </li>
+                    <li class="nav__item">
+                      <a href="mailto:info@devstudio.com" class="link mobile-menu-mail">
+                        info@devstudio.com</a>
+                    </li>
+                    </ul>
+                    <ul class="mobil-social-network">
+                      <li><a class="mobil-social-network-link link" href="">Instagram</a></li>
+                      <li><a class="mobil-social-network-link link" href="">Twitter</a></li>
+                      <li><a class="mobil-social-network-link link" href="">Facebook</a></li>
+                      <li><a class="mobil-social-network-link link" href="">LinkedIn</a></li>
+                     </ul>
+                   
+                 </div>
+                 <!--Конец мобильного меню  -->
+        <ul class="contact list">
+          <li class="contact-tablet">
+            <a href="mailto:info@devstudio.com" class="link contact__link">
+              <svg width="16" height="12" class="contact__icon">
+                <use href="./images/symbol-defs.svg#icon-envelope">
+                </use>
+              </svg>info@devstudio.com</a>
+          </li>
+          <li class="contact-tablet">
+            <a href="tel:+380956242892" class="link contact__link">
+              <svg width="10" height="16" class="contact__icon">
+                <use href="./images/symbol-defs.svg#icon-smartphone">
+                </use>
+              </svg>+38 095 624 28 92</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <section class="section">
+      <div class="conteiner portfolio-cards">
+        <h1 hidden class="section-title">Портфоліо</h1>
+        <ul class="portfolio-buttons list">
+          <li class="button-menu">
+            <button type="button" class="button-secondary">Все</button>
+          </li>
+          <li class="button-menu">
+            <button type="button" class="button-secondary">Веб-сайты</button>
+          </li>
+          <li class="button-menu">
+            <button type="button" class="button-secondary">Приложения</button>
+          </li>
+          <li class="button-menu">
+            <button type="button" class="button-secondary">Дизайн</button>
+          </li>
+          <li class="button-menu">
+            <button type="button" class="button-secondary">Маркетинг</button>
+          </li>
+        </ul>
+        <ul class="projects list">
+          <li class="projects-cards">
+            <a href="" class="projects-focus link">
+              <div class="projects-card-wrap">
+                              <picture>
+               <source media="(min-width: 1200px)" 
+                       srcset="./img/works/works-1-desktop.webp 1x, 
+                                ./img/works/works-1-desktop@2x.webp 2x" 
+                       type="image/webp"> 
+               <source media="(min-width: 768px)" 
+                       srcset="./img/works/works-1-tablet.webp 1x, 
+                              ./img/works/works-1-tablet@2x.webp 2x" 
+                       type="image/webp"> 
+               <source media="(min-width: 250px)" 
+                       srcset="./img/works/works-1.webp 1x, 
+                                ./img/works/works-1@2x.webp 2x" 
+                      type="image/webp"> 
+
+                <source media="(min-width: 1200px)" 
+                         srcset="./img/works/works-1-desktop.jpg 1x, 
+                                ./img/works/works-1-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" 
+                        srcset="./img/works/works-1-tablet.jpg 1x, 
+                                ./img/works/works-1-tablet@2x.jpg 2x">
+                <source media="(min-width: 250px)" 
+                        srcset="./img/works/works-1.jpg 1x, 
+                                ./img/works/works-1@2x.jpg 2x">    
+
+                <img 
+                src="./img/works/works-1.jpg" 
+                alt="Дизайнер"
+                loading="lazy">
+              </picture>
+
+              <p class="projects-card-text">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
+              шпионажа и атак на защищённые сервера конкурентов.</p>
+              </div>
+              <div class="projects-cards-title">
+                <h3 class="title">Технокряк</h3>
+                <p class="description">Веб-сайт</p>
+              </div>
+            </a>
+          </li>
+          <li class="projects-cards">
+            <a href="" class="projects-focus link">
+              <div class="projects-card-wrap">
+              <picture>
+               <source media="(min-width: 1200px)" 
+                       srcset="./img/works/works-2-desktop.webp 1x, 
+                        ./img/works/works-2-desktop@2x.webp 2x" 
+                      type="image/webp"> 
+               <source media="(min-width: 768px)" 
+                       srcset="./img/works/works-2-tablet.webp 1x, 
+                        ./img/works/works-2-tablet@2x.webp 2x" 
+                      type="image/webp"> 
+               <source media="(min-width: 250px)" 
+                       srcset="./img/works/works-2.webp 1x, 
+                        ./img/works/works-2@2x.webp 2x" 
+                      type="image/webp"> 
+
+                <source media="(min-width: 1200px)" 
+                         srcset="./img/works/works-2-desktop.jpg 1x, 
+                        ./img/works/works-2-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" 
+                        srcset="./img/works/works-2-tablet.jpg 1x, 
+                        ./img/works/works-2-tablet@2x.jpg 2x">
+                <source media="(min-width: 250px)" 
+                        srcset="./img/works/works-2.jpg 1x, 
+                        ./img/works/works-2@2x.jpg 2x">        
+
+                <img 
+                src="./img/works/works-2.jpg" 
+                alt="Дизайнер"
+                loading="lazy">
+              </picture>
+              <p class="projects-card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi corporis nulla tempore iure quam at exercitationem officia porro laboriosam esse non ducimus nemo sint sed similique facilis, ipsum fugiat reiciendis?</p>
+              </div>
+              <div class="projects-cards-title">
+                <h3 class="title">Постер New Orlean vs Golden Star</h3>
+                <p class="description">Дизайн</p>
+              </div>
+            </a>
+          </li>
+          <li class="projects-cards">
+            <a href="" class="projects-focus link">
+              <div class="projects-card-wrap">
+              <picture>
+               <source media="(min-width: 1200px)" 
+                       srcset="./img/works/works-3-desktop.webp 1x, 
+                        ./img/works/works-3-desktop@2x.webp 2x" 
+                      type="image/webp"> 
+               <source media="(min-width: 768px)" 
+                       srcset="./img/works/works-3-tablet.webp 1x, 
+                        ./img/works/works-3-tablet@2x.webp 2x" 
+                      type="image/webp"> 
+               <source media="(min-width: 250px)" 
+                       srcset="./img/works/works-3.webp 1x, 
+                        ./img/works/works-3@2x.webp 2x" 
+                      type="image/webp"> 
+
+                <source media="(min-width: 1200px)" 
+                         srcset="./img/works/works-3-desktop.jpg 1x, 
+                        ./img/works/works-3-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" 
+                        srcset="./img/works/works-3-tablet.jpg 1x, 
+                        ./img/works/works-3-tablet@2x.jpg 2x">
+                <source media="(min-width: 250px)" 
+                        srcset="./img/works/works-3.jpg 1x, 
+                        ./img/works/works-3@2x.jpg 2x">        
+
+                <img 
+                src="./img/works/works-3.jpg" 
+                alt="Дизайнер"
+                loading="lazy">
+              </picture>
+
+              <p class="projects-card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi corporis nulla tempore iure quam at exercitationem officia porro laboriosam esse non ducimus nemo sint sed similique facilis, ipsum fugiat reiciendis?</p>
+              </div>
+              <div class="projects-cards-title">
+                <h3 class="title">Ресторан Seafood</h3>
+                <p class="description">Приложение</p>
+              </div>
+            </a>
+          </li>
+          <li class="projects-cards">
+            <a href="" class="projects-focus link">
+              <div class="projects-card-wrap">
+              <picture>
+               <source media="(min-width: 1200px)" 
+                       srcset="./img/works/works-4-desktop.webp 1x, 
+                        ./img/works/works-4-desktop@2x.webp 2x" 
+                      type="image/webp"> 
+               <source media="(min-width: 768px)" 
+                       srcset="./img/works/works-4-tablet.webp 1x, 
+                        ./img/works/works-4-tablet@2x.webp 2x" 
+                      type="image/webp"> 
+               <source media="(min-width: 250px)" 
+                       srcset="./img/works/works-4.webp 1x, 
+                        ./img/works/works-4@2x.webp 2x" 
+                      type="image/webp"> 
+
+                <source media="(min-width: 1200px)" 
+                         srcset="./img/works/works-4-desktop.jpg 1x, 
+                        ./img/works/works-4-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" 
+                        srcset="./img/works/works-4-tablet.jpg 1x, 
+                        ./img/works/works-4-tablet@2x.jpg 2x">
+                <source media="(min-width: 250px)" 
+                        srcset="./img/works/works-4.jpg 1x, 
+                        ./img/works/works-4@2x.jpg 2x">        
+
+                <img 
+                src="./img/works/works-4.jpg" 
+                alt="Дизайнер"
+                loading="lazy">
+              </picture>
+              <p class="projects-card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi corporis nulla tempore iure quam at exercitationem officia porro laboriosam esse non ducimus nemo sint sed similique facilis, ipsum fugiat reiciendis?</p>
+              </div>
+              <div class="projects-cards-title">
+                <h3 class="title">Проект Prime</h3>
+                <p class="description">Маркетинг</p>
+              </div>
+            </a>
+          </li>
+          <li class="projects-cards">
+            <a href="" class="projects-focus link">
+              <div class="projects-card-wrap">
+              <picture>
+               <source media="(min-width: 1200px)" 
+                       srcset="./img/works/works-5-desktop.webp 1x, 
+                        ./img/works/works-5-desktop@2x.webp 2x" 
+                      type="image/webp"> 
+               <source media="(min-width: 768px)" 
+                       srcset="./img/works/works-5-tablet.webp 1x, 
+                        ./img/works/works-5-tablet@2x.webp 2x" 
+                      type="image/webp"> 
+               <source media="(min-width: 250px)" 
+                       srcset="./img/works/works-5.webp 1x, 
+                        ./img/works/works-5@2x.webp 2x" 
+                      type="image/webp"> 
+
+                <source media="(min-width: 1200px)" 
+                         srcset="./img/works/works-5-desktop.jpg 1x, 
+                        ./img/works/works-5-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" 
+                        srcset="./img/works/works-5-tablet.jpg 1x, 
+                        ./img/works/works-5-tablet@2x.jpg 2x">
+                <source media="(min-width: 250px)" 
+                        srcset="./img/works/works-5.jpg 1x, 
+                        ./img/works/works-5@2x.jpg 2x">        
+
+                <img 
+                src="./img/works/works-5.jpg" 
+                alt="Дизайнер"
+                loading="lazy">
+              </picture>
+                          <p class="projects-card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi corporis nulla tempore iure
+                            quam at exercitationem officia porro laboriosam esse non ducimus nemo sint sed similique facilis, ipsum fugiat
+                            reiciendis?</p>
+                          </div>
+                          <div class="projects-cards-title">
+                            <h3 class="title">Проект Boxes</h3>
+                            <p class="description">Приложение</p>
+                          </div>
+                          </a>
+          </li>
+          <li class="projects-cards">
+            <a href="" class="projects-focus link">
+              <div class="projects-card-wrap">
+               <picture>   
+               <source media="(min-width: 1200px)" 
+                       srcset="./img/works/works-6-desktop.webp 1x, 
+                        ./img/works/works-6-desktop@2x.webp 2x" 
+                      type="image/webp"> 
+               <source media="(min-width: 768px)" 
+                       srcset="./img/works/works-6-tablet.webp 1x, 
+                        ./img/works/works-6-tablet@2x.webp 2x" 
+                      type="image/webp"> 
+               <source media="(min-width: 250px)" 
+                       srcset="./img/works/works-6.webp 1x, 
+                        ./img/works/works-6@2x.webp 2x" 
+                      type="image/webp"> 
+
+                <source media="(min-width: 1200px)" 
+                         srcset="./img/works/works-6-desktop.jpg 1x, 
+                        ./img/works/works-6-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" 
+                        srcset="./img/works/works-6-tablet.jpg 1x, 
+                        ./img/works/works-6-tablet@2x.jpg 2x">
+                <source media="(min-width: 250px)" 
+                        srcset="./img/works/works-6.jpg 1x, 
+                        ./img/works/works-6@2x.jpg 2x">        
+
+                <img 
+                src="./img/works/works-6.jpg" 
+                alt="Дизайнер"
+                loading="lazy">
+              </picture>
+              <p class="projects-card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi corporis nulla tempore iure quam at exercitationem officia porro laboriosam esse non ducimus nemo sint sed similique facilis, ipsum fugiat reiciendis?</p>
+              </div>
+              <div class="projects-cards-title">
+                <h3 class="title">Inspiration has no Borders</h3>
+                <p class="description">Веб-сайт</p>
+              </div>
+            </a>
+          </li> 
+          <li class="projects-cards">
+            <a href="" class="projects-focus link">
+              <div class="projects-card-wrap">
+              <picture>
+               <source media="(min-width: 1200px)" 
+                       srcset="./img/works/works-7-desktop.webp 1x, 
+                        ./img/works/works-7-desktop@2x.webp 2x" 
+                      type="image/webp"> 
+               <source media="(min-width: 768px)" 
+                       srcset="./img/works/works-7-tablet.webp 1x, 
+                        ./img/works/works-7-tablet@2x.webp 2x" 
+                      type="image/webp"> 
+               <source media="(min-width: 250px)" 
+                       srcset="./img/works/works-7.webp 1x, 
+                        ./img/works/works-7@2x.webp 2x" 
+                      type="image/webp"> 
+
+                <source media="(min-width: 1200px)" 
+                         srcset="./img/works/works-7-desktop.jpg 1x, 
+                        ./img/works/works-7-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" 
+                        srcset="./img/works/works-7-tablet.jpg 1x, 
+                        ./img/works/works-7-tablet@2x.jpg 2x">
+                <source media="(min-width: 250px)" 
+                        srcset="./img/works/works-7.jpg 1x, 
+                        ./img/works/works-7@2x.jpg 2x">        
+
+                <img 
+                src="./img/works/works-7.jpg" 
+                alt="Дизайнер"
+                loading="lazy">
+              </picture>
+              <p class="projects-card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi corporis nulla tempore iure quam at exercitationem officia porro laboriosam esse non ducimus nemo sint sed similique facilis, ipsum fugiat reiciendis?</p>
+              </div>
+              <div class="projects-cards-title">
+                <h3 class="title">Издание Limited Edition</h3>
+                <p class="description">Дизайн</p>
+              </div>
+            </a>
+          </li>
+          <li class="projects-cards">
+            <a href="" class="projects-focus link">
+              <div class="projects-card-wrap">
+              <picture>
+               <source media="(min-width: 1200px)" 
+                       srcset="./img/works/works-8-desktop.webp 1x, 
+                        ./img/works/works-8-desktop@2x.webp 2x" 
+                      type="image/webp"> 
+               <source media="(min-width: 768px)" 
+                       srcset="./img/works/works-8-tablet.webp 1x, 
+                        ./img/works/works-8-tablet@2x.webp 2x" 
+                      type="image/webp"> 
+               <source media="(min-width: 250px)" 
+                       srcset="./img/works/works-8.webp 1x, 
+                        ./img/works/works-8@2x.webp 2x" 
+                      type="image/webp"> 
+
+                <source media="(min-width: 1200px)" 
+                         srcset="./img/works/works-8-desktop.jpg 1x, 
+                        ./img/works/works-8-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" 
+                        srcset="./img/works/works-8-tablet.jpg 1x, 
+                        ./img/works/works-8-tablet@2x.jpg 2x">
+                <source media="(min-width: 250px)" 
+                        srcset="./img/works/works-8.jpg 1x, 
+                        ./img/works/works-8@2x.jpg 2x">        
+
+                <img 
+                src="./img/works/works-8.jpg" 
+                alt="Дизайнер"
+                loading="lazy">
+              </picture>
+              <p class="projects-card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi corporis nulla tempore iure quam at exercitationem officia porro laboriosam esse non ducimus nemo sint sed similique facilis, ipsum fugiat reiciendis?</p>
+              </div>
+              <div class="projects-cards-title">
+                <h3 class="title">Проект LAB</h3>
+                <p class="description">Маркетинг</p>
+              </div>
+            </a>
+          </li>
+          <li class="projects-cards">
+            <a href="" class="projects-focus link">
+              <div class="projects-card-wrap">
+              <picture>
+               <source media="(min-width: 1200px)" 
+                       srcset="./img/works/works-9-desktop.webp 1x, 
+                        ./img/works/works-9-desktop@2x.webp 2x" 
+                      type="image/webp"> 
+               <source media="(min-width: 768px)" 
+                       srcset="./img/works/works-9-tablet.webp 1x, 
+                        ./img/works/works-9-tablet@2x.webp 2x" 
+                      type="image/webp"> 
+               <source media="(min-width: 250px)" 
+                       srcset="./img/works/works-9.webp 1x, 
+                        ./img/works/works-9@2x.webp 2x" 
+                      type="image/webp"> 
+
+                <source media="(min-width: 1200px)" 
+                         srcset="./img/works/works-9-desktop.jpg 1x, 
+                        ./img/works/works-9-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" 
+                        srcset="./img/works/works-9-tablet.jpg 1x, 
+                        ./img/works/works-9-tablet@2x.jpg 2x">
+                <source media="(min-width: 250px)" 
+                        srcset="./img/works/works-9.jpg 1x, 
+                        ./img/works/works-9@2x.jpg 2x">        
+
+                <img 
+                src="./img/works/works-9.jpg" 
+                alt="Дизайнер"
+                loading="lazy">
+              </picture>
+              <p class="projects-card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi corporis nulla tempore iure quam at exercitationem officia porro laboriosam esse non ducimus nemo sint sed similique facilis, ipsum fugiat reiciendis?</p>
+              </div>
+              <div class="projects-cards-title">
+                <h3 class="title">Growing Business</h3>
+                <p class="description">Приложение</p>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="conteiner footer-sections">
+        <div class="join-left">
+          <a href="" class="logo footer-logo link"><span>Mebele</span>iya</a>
+          <address>
+            <ul class="footer-contacts list">
+              <li class="footer-contacts-link">
+                <a class="address">м. Київ вул. Григоренко 39б</a>
+              </li>
+              <li class="">
+                <a href="mailto:info@example.com" class="footer-contacts-link link">info@example.com</a>
+              </li>
+              <li class="">
+                <a href="tel:+38056242892" class="footer-contacts-link link">+38 095 624 28 92</a>
+              </li>
+            </ul>
+          </address>
+        </div>
+
+    </footer>
+        <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+          integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+          crossorigin="anonymous"></script>
+        <script defer src="js/mobile-menu.js"></script>
+
+  </body>
+</html>
